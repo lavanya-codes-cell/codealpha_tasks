@@ -1,0 +1,547 @@
+*{
+	font-family: calibri;
+    margin: 0;
+    padding: 0;
+    background-color: #0f152a;
+    box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+	scroll-padding-top: 60px;
+	}
+
+/*-----nav header style-----*/
+a {
+	text-decoration:none;
+   }
+   
+.nav-link {color: white}
+
+.collapse a:hover {
+	color:blue;
+	text-decoration:underline;
+	}
+
+/*-----home style------*/
+
+.home {
+	display: flex; 
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	gap: 80px;
+	padding: 10% 10%;
+	}
+
+.home-imgs img {
+	width:300px; 
+	height:300px;
+	border-radius:50%;
+	box-shadow:7px 7px 18px aqua;
+	transition-duration:2s;
+	animation:floatimg 3s ease-in-out infinite;
+	}
+	
+@keyframes floatimg {
+	0%{transform:translateY(0);}
+    50%{transform:translateY(-8%);}
+    100%{transform:translateY(0);}
+	}
+
+.home-cont h2 {
+	color: white;
+	font-size: 25px;
+	line-height: 1.2;
+    animation: typing 3s 1;
+	margin-top: 20px;
+	}
+.home-cont h1 {
+	color:white;
+	font-size:35px;
+	line-height:1.2;
+	letter-spacing:1px;
+	font-weight:bold;
+	}
+	
+.home-cont h3 {
+	color:white;
+	line-height:1.2;
+	font-size:23px;
+	}
+	
+.home-cont span {color:aqua;}
+
+.home-cont p {
+	color:white;
+	font-size:16px;
+	line-height:1.6;
+	margin-top:15px;
+	animation:typing 3s 1;
+	}
+
+.button {
+	display:inline-block;
+	padding:6px 18px;
+	border-radius:20px;
+	background-color:aqua;
+	color:black;
+	margin:10px 0;
+	transition-duration:1s;
+	text-align:center;
+	line-height:2;
+	box-shadow: 0 0 16px aqua;
+	letter-spacing:1px;
+	}
+	
+.button:hover {
+	box-shadow:none;
+	}
+	
+.home-cont {animation:typing 4s 1;}
+
+@keyframes typing {
+	0%{transform:translateY(-20%)};
+}
+
+/*----about style----*/
+.about {
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+	justify-content: center;
+	padding: 10% 10%;
+	gap: 130px;
+	}
+
+.about-imgs img {
+	width:300px; 
+	height:300px;
+	border-radius:50%;
+	box-shadow: 0px 10px 20px aqua;
+	transition-duration:2s;
+	animation: floatimg 3s ease-in-out infinite;
+	}
+
+.about-cont h1 {
+	color:white;
+	line-height:1.2;
+	font-size:32px;
+	animation:typing 5s 1;
+	}
+	
+span{color:aqua}
+
+.about-cont h3 {
+	color:white;
+	font-size:22px;
+	margin-top:15px;
+	letter-spacing:1px;
+	}
+	
+.about-cont p {
+	color:white;
+	font-size:16px;
+	line-height:1.4;
+	margin-top:15px;
+	animation:typing 4s 1;
+	}
+
+.about .btn {
+	display:inline-block;
+	padding:8px 20px;
+	letter-spacing:1px;
+	border-radius:20px;
+	background-color:aqua;
+	text-decoration:none;
+	color:black;
+	margin-top:10px;
+	transition-duration:1s;
+	text-align:center;
+	box-shadow:1px 3px 15px aqua;
+	}
+	
+.btn:hover {box-shadow:none;}
+
+/*----Projects----*/
+.project h1 {
+	color: white;
+	font-size: 30px;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing:1px;
+	}
+
+.project-card {
+  background:#111827;
+  border:1px solid rgba(255,255,255,0.20);
+  border-radius:12px;
+  overflow:hidden;
+  transition:0.8s ease;
+}
+
+.project-card img {
+  width:100%;
+  height:auto;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px white;
+}
+
+.tools {
+  color:#9ca3af;
+  font-size:14px;
+}
+
+.view-btn {
+	border: 1px solid #38bdf8;
+	color: blue;
+	background: transparent;
+	transition: 0.5s ease;
+}
+
+.view-btn:hover {
+	background: #38bdf8;
+	color: #000;
+}
+
+
+/*----Skills style----*/
+.skills {overflow:hidden;
+	display: flex;
+    justify-content: center;}
+
+.skills-cont h2 {
+	font-weight:bold;
+	padding:10px 20px;
+	color:white;
+	margin-top:0;
+	padding-top:70px;
+	text-transform: uppercase;
+	letter-spacing:1px;
+	}
+	
+.skills-cont ul {
+	color:white; 
+	line-height:1.6;
+	font-size:19px;
+	padding-left:30px;
+	}
+
+.skills-cont h3 {
+	font-weight:bold;
+	padding:10px 20px;
+	color:white;
+	text-transform: uppercase;
+	letter-spacing:1px;
+	}
+	
+/*----Interests style----*/
+.interests {overflow:hidden;
+    display: flex;
+    padding-bottom: 80px;
+    justify-content: center;}
+
+.interests-cont h2 {
+	font-weight:bold;
+	padding:30px 40px;
+	color:white;
+	margin-top:0;
+	text-transform: uppercase;
+	letter-spacing:1px;
+	padding-top:50px;
+	}
+	
+.interests-cont ul {
+	color:white; 
+	line-height:1.8;
+	font-size:19px;
+	padding-left:30px;
+	padding-bottom: 40px;
+	}
+
+
+/*-----Contact style-----*/
+.contact {
+	padding-top:20px;
+	overflow:hidden;
+	}
+	
+.contact h2 {
+	color:white;
+	text-align:center; 
+	font-weight:bold;
+	text-transform: uppercase;
+	letter-spacing:1px;
+	}
+
+.contact form {
+	width:46%;
+	margin:auto;
+	padding-top:5px;
+	text-align:center;
+	}
+	
+.containers {
+	display:flex;
+	flex-direction: column;
+	}
+
+.contact form .input-box input,
+.contact form textarea {
+	font-size:15px;
+	color:black;
+	background-color:lightblue;
+	border-radius:8px;
+	}
+
+.contact form .input-box input {
+	padding:12px;
+	width:46%;
+	}
+
+.contact form textarea {
+	resize:none;
+	border:solid 2px;
+	}
+
+.contact form .btn {
+	margin:20px;
+	padding:3px 25px;
+	letter-spacing:1px;
+	border-radius:20px;
+	background-color:aqua;
+	color:black;
+	font-size:15px;
+	line-height:2;
+	font-weight:bold;
+	box-shadow:1px 3px 10px aqua;
+	}
+	
+.contact form .btn:hover {box-shadow:none;}
+
+
+/*------Desktop (1024px)------*/
+
+@media screen and (max-width:1024px) {
+	
+/*-----home style-----*/
+	.home {
+		gap: 60px;
+		}
+	.home-cont h2 {
+		font-size: 20px;
+	}
+	.home-cont h1 {
+		font-size:33px;
+	}
+	.home-cont h3 {
+		font-size:22px;
+	}
+	.home-cont p {
+		font-size:15px;
+	}
+	.button {
+		padding:5px 12px;
+		font-size: 15px;
+	}
+	.home-imgs img{
+		width:250px; 
+		height:250px;
+	}
+	
+/*-----about style-----*/
+	.about-cont h1 {
+		font-size:28px;
+	}
+	.about-cont h3 {
+		font-size:22px;
+	}
+	.about-cont p {
+		font-size:15px;
+	}
+	.about-imgs img{
+		width:250px; 
+		height:250px;
+	}
+	.about .btn {
+		padding:8px 16px;
+		font-size:15px;
+	}
+	
+/*-----skills style-----*/	
+	.skills-cont h2 {
+		font-size: 26px;
+		margin-top: 20px;
+		padding:20px 20px;
+	}
+	.skills-cont ul {
+		font-size: 17px;
+	}
+	.skills-cont h3 {
+		font-size: 26px;
+		padding:20px 20px;
+	} 
+	
+/*-----interests style-----*/	
+	.interests-cont h2 {
+		font-size: 25px;
+		padding: 30px 0;
+	}
+	.interests-cont ul {
+		font-size: 17px;
+	} 
+	
+/*-----Contact style-----*/	
+	.contact form .btn {
+		font-size:13px;
+		padding:3px 20px;
+	}
+	.contact {
+		padding-top: 0;
+	}
+}
+
+
+/*-------Tablet (768px)-------*/
+
+@media screen and (max-width: 768px) {
+    /*----- Shared Section Style -----*/
+    .home, .about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 60px 30px; 
+        gap: 40px;
+    }
+
+    /*----- Home Section -----*/
+    .home-cont h1 { font-size: 32px; }
+    .home-cont h3 { font-size: 20px; }
+    .home-cont p { 
+        font-size: 14px; 
+        line-height: 1.6; 
+        max-width: 600px; 
+        margin: 0 auto; 
+    }
+
+    .home-imgs img, .about-imgs img {
+        width: 250px; 
+        height: 250px;
+        margin-top: 0; 
+        transition: transform 0.3s ease;
+    }
+
+    /*----- About Section -----*/
+    .about-cont h1 { font-size: 32px; }
+    .about-cont p { 
+        font-size: 14px; 
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+	
+/*-----skills style-----*/	
+	.skills-cont h2 {
+		font-size: 26px;
+		margin-top: 20px;
+		padding:20px 20px;
+	}
+	.skills-cont ul {
+		font-size: 17px;
+	}
+	.skills-cont h3 {
+		font-size: 26px;
+		padding:20px 20px;
+	} 
+	
+/*-----interests style-----*/	
+	.interests-cont h2 {
+		font-size: 25px;
+	}
+	.interests-cont ul {
+		font-size: 16px;
+	} 
+	
+/*-----Contact style-----*/	
+	.contact form .btn {
+		font-size:13px;
+		padding:3px 20px;
+	}
+	.contact {
+	padding-top:5px;
+    }
+}
+
+
+/*------Mobile (480px)------*/
+
+@media screen and (max-width:480px) {
+
+/*-----home, about style-----*/	
+    .home, .about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 50px 20px;
+        gap: 30px;
+    }
+    .home-imgs img, .about-imgs img {
+        position: static;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%; 
+        transition: 0.3s ease;
+    }
+    .home-cont p, .about-cont p {
+        font-size: 13px; 
+        line-height: 1.6; 
+    }
+	.home .button {
+		padding:5px 12px;
+		font-size:14px;
+	}
+	.about .btn{
+		padding:8px 12px;
+		font-size:14px;
+	}
+	
+/*-----skills style-----*/	
+	.skills-cont h2 {
+		font-size: 24px;
+		margin-top: 20px;
+		padding:20px 20px;
+	}
+	.skills-cont ul {
+		font-size: 16px;
+	}
+	.skills-cont h3 {
+		font-size: 24px;
+		padding:20px 20px;
+	} 
+	
+/*-----interests style-----*/	
+	.interests-cont h2 {
+		font-size: 25px;
+	}
+	.interests-cont ul {
+		font-size: 16px;
+	} 
+
+/*-----Contact style-----*/	
+	.contact form {
+		width:80%;
+	}
+	.contact form .btn {
+		font-size:13px;
+		padding:3px 20px;
+		margin:10px
+	}
+	.contact {
+	padding-top:5px;
+    }
+}
