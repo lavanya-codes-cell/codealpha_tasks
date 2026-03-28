@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+ <link rel="icon" href="images/logo.png">
+ <title>Portfolio</title>
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+ <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="window.scrollTo(0,0)">
+
+<nav class="navbar navbar-expand-md navbar-dark bg-black fixed-top">
+<div class="container-fluid">
+<a class="navbar-brand fw-bold text-info" href="#">Portfolio</a>
+
+ <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mobileMenu">
+      <span class="navbar-toggler-icon"></span>
+ </button>
+
+<div class="collapse navbar-collapse" id="mobileMenu">
+<ul class="navbar-nav ms-auto fw-bold">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#project">Projects</a></li>
+		<li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+		<li class="nav-item"><a class="nav-link" href="#interests">Interests</a></li>
+		<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!--Home section-->
+<section class="home" id="home">
+    <div class="home-cont">
+        <h2>Hello, It's Me</h2>
+        <h1>Lavanya</h1>
+        <h3>And I'm a <span>Web Developer!</span></h3>
+        <p>To obtain a position that will enable me to use my strong organizational skills, educational background, and ability to work well with people. 
+          Seeking an entry-level position where I can contribute to innovative solutions and continue to develop my skills.</p>
+        <a href="Lavanya_Resume.pdf" class="button">Download CV</a>
+    </div>
+    <div class="home-imgs">
+        <img src="images/home2.jpeg" alt="loading...">
+    </div>
+</section>
+
+<!--About section-->
+<section class="about" id="about">
+    <div class="about-cont">
+        <h1>About <span>Me</span> </h1>
+        <h3>Frontend Developer!</h3>
+        <p>I am a Web Designer with a strong interest in creating modern, and user-friendly websites.I enjoy combining creativity with functionality
+		to design responsive web pages that provides a great user experience. I am eager to grow my skills further and contribute my design ideas to real projects.</p>
+        <a href="#" class="btn">Read more..</a>
+    </div>
+	
+	<div class="about-imgs">
+	  <img src="images/about1.jpeg" alt="loading..."></img>
+  </div>
+</section>
+
+<!----Projects---->
+<section class="project" id="project">
+<div class="project-cont pb-2">
+<h1> Projects </h1>
+<div class="container my-4">
+  <div class="row g-4">
+
+<!-- Project Card 1 -->
+    <div class="col-md-4 col-sm-6 mb-2">
+      <div class="project-card h-100">
+        <img src="images/img1.png" class="img-fluid" alt="Image Gallery">
+        <div class="p-3">
+          <h5 class="text-info">Image Gallery</h5>
+          <p class="text-light small">
+            A fully responsive image gallery designed to showcase images in a clean and interactive
+ layout. When a user clicks an image, a lightbox popup opens to show a larger view. I also implemented next and previous navigation using JavaScript. 
+ Additionally, I added a filter feature where users can view images based on categories like nature or animals.
+          </p>
+          <p class="tools">Tools: HTML, CSS, JavaScript</p>
+		  <a href="projects/prj1/index.html" target="_blank" class="btn view-btn mt-auto">View</a>
+        </div>
+      </div>
+    </div>
+    
+  <!-- Project Card 2 -->
+    <div class="col-md-4 col-sm-6 mb-2">
+	<div class="project-card h-100">
+        <img src="images/img4.png" class="img-fluid" alt="Calc">
+        <div class="p-3">
+          <h5 class="text-info">Calculator</h5>
+          <p class="text-light small">
+            Developed a responsive calculator web application capable of performing basic arithmetic operations including addition, subtraction, 
+            multiplication, division, and percentage calculations. Designed the user interface using CSS Grid for Structured layout. 
+            Added keyboard support for enhanced user experience and ensured controlled input handling to prevent invalid expressions.
+          </p>
+          <p class="tools">Tools: HTML, CSS Grid, JavaScript</p>
+		  <a href="projects/prj2/index.html" target="_blank" class="btn view-btn mt-auto">View</a>
+        </div>
+       </div>
+    </div>
+
+  </div>
+ </div>
+
+</div>
+</section>
+
+
+<!--Skills section-->
+<section class="skills" id="skills">
+    <div class="skills-cont">
+	<h2>Technical <span>Skills<span></h2>
+        <ul type="disc" id="ts">
+		<li>Core Python</li>
+		<li>Bootstrap</li>
+		<li>Front-End <span>(HTML, CSS, JS, DOM & React.JS)</span></li>
+		<li>MS Office Suite <span> (Word, Excel, Power Point)</span></li>
+    <li>Git & Github</li>
+		</ul>
+		
+	<h3>Skills</h3>
+	    <ul type="circle" id="skill">
+		<li>Problem Solving & innovative Solutions</li>
+		<li>Typewriting in English</li>
+		<li>Good Communication</li>
+		<li>Time Management</li>
+		</ul>
+    </div>
+</section>	
+
+<!---interests section--->
+<section class="interests" id="interests">
+    <div class="interests-cont">
+	<h2>Interests</h2>
+        <ul class="mb-0" type="square" id="ts">
+		<li>Building Apps or contributing to Open Source</li>
+		<li>Solving Puzzles</li>
+		<li>Chess</li>
+		<li>Carrom</li>
+		<li>Crosswords</li>
+		<li>Editing</li>
+		<li>Table Tennis</li>
+		<li>Drawings</li>
+		<li>Exercise</li>
+		<li>Songs</li>
+		</ul>
+    </div>
+</section>	
+	
+<!--Contact section-->
+<section class="contact" id="contact">
+<div>
+<h2>Contact <span>Me</span> </h2>
+</div>
+<form action="#" onsubmit="valid()">
+<div class="containers">
+    <div class="input-box">
+	  <input type="text" required placeholder="Full Name" id="name">
+	  <span id="exp1"></span>
+	  
+	  <input type="email" id="e-mail" required placeholder="Email Address">
+	  <span id="exp2"></span>
+	</div>
+   <br>
+    <div class="input-box">
+	  <input type="number" id="number" required  placeholder="Mobile Number">
+	  <span id="exp3"></span>
+	  
+	  <input type="text" required  placeholder="Email Subject" id="e-sub">
+	</div><br>
+	<textarea  rows="10" id="msg" placeholder="Type Your Message Here" ></textarea>
+</div>
+	<input type="submit" value="Submit" class="btn" id="msg" onclick="valid()">
+	<input type="reset" value="Reset" class="btn">
+</form>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
